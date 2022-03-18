@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/blog/:match*",
-      "destination": "teste-turbo-docs.vercel.app/:match*"
+      "destination": "https://teste-turbo-docs.vercel.app/:match*"
     }
   ]
 }

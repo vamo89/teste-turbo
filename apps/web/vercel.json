@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/blog/:match*",
+      "destination": "teste-turbo-docs.vercel.app/:match*"
+    }
+  ]
+}

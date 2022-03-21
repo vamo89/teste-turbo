@@ -8,6 +8,13 @@ module.exports = (phase) =>
     async rewrites() {
       return [
         {
+          source: "/docs",
+          destination:
+            phase === PHASE_DEVELOPMENT_SERVER
+              ? "http://localhost:3001/docs"
+              : "https://teste-turbo-docs.vercel.app/docs",
+        },
+        {
           source: "/docs/:match*",
           destination:
             phase === PHASE_DEVELOPMENT_SERVER
